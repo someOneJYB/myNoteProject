@@ -1,0 +1,1 @@
+(window.__LOADABLE_LOADED_CHUNKS__=window.__LOADABLE_LOADED_CHUNKS__||[]).push([[6],{214:function(e,n,t){"use strict";t.r(n),t.d(n,"default",function(){return r});var _=t(0),a=t.n(_);function r(){return a.a.createElement("div",{className:"App"},a.a.createElement("h1",null,"detail"))}}}]);

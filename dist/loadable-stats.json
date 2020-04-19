@@ -1,0 +1,387 @@
+{
+  "errors": [],
+  "warnings": [
+    "./src/page/Detail/index.js 3:21-23\n\"export 'a1' was not found in './count.js'\n @ ./src/router/routes.js\n @ ./src/router/index.js\n @ ./src/App.js\n @ ./src/index.js\n @ multi ./src/index.js",
+    "./src/page/Detail/index.js 3:25-27\n\"export 'a2' was not found in './count.js'\n @ ./src/router/routes.js\n @ ./src/router/index.js\n @ ./src/App.js\n @ ./src/index.js\n @ multi ./src/index.js"
+  ],
+  "version": "4.42.1",
+  "hash": "0d76e2fdaebf01bd77a9",
+  "publicPath": "/",
+  "outputPath": "/Users/baiyuejiao/repos/ssr-note/dist",
+  "assetsByChunkName": {
+    "main": [
+      "css/main.css",
+      "main.bundle.0d76e2fd.js",
+      "main.93971055efd308e4a74f.hot-update.js"
+    ]
+  },
+  "assets": [
+    {
+      "name": "0.bundle.0d76e2fd.js",
+      "size": 15084929,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [],
+      "info": {
+        "immutable": true
+      },
+      "emitted": true
+    },
+    {
+      "name": "1.93971055efd308e4a74f.hot-update.js",
+      "size": 769,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "1.bundle.0d76e2fd.js",
+      "size": 81948,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "2.93971055efd308e4a74f.hot-update.js",
+      "size": 783,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "2.bundle.0d76e2fd.js",
+      "size": 24258,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "3.bundle.0d76e2fd.js",
+      "size": 79892,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [],
+      "info": {
+        "immutable": true
+      },
+      "emitted": true
+    },
+    {
+      "name": "4.93971055efd308e4a74f.hot-update.js",
+      "size": 774,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "4.bundle.0d76e2fd.js",
+      "size": 17825,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "5.bundle.0d76e2fd.js",
+      "size": 4645,
+      "chunks": [
+        5
+      ],
+      "chunkNames": [],
+      "info": {
+        "immutable": true
+      },
+      "emitted": true
+    },
+    {
+      "name": "6.93971055efd308e4a74f.hot-update.js",
+      "size": 751,
+      "chunks": [
+        6
+      ],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "6.bundle.0d76e2fd.js",
+      "size": 23707,
+      "chunks": [
+        6
+      ],
+      "chunkNames": [],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "7.bundle.0d76e2fd.js",
+      "size": 53459,
+      "chunks": [
+        7
+      ],
+      "chunkNames": [],
+      "info": {
+        "immutable": true
+      },
+      "emitted": true
+    },
+    {
+      "name": "8.bundle.0d76e2fd.js",
+      "size": 8715,
+      "chunks": [
+        8
+      ],
+      "chunkNames": [],
+      "info": {
+        "immutable": true
+      },
+      "emitted": true
+    },
+    {
+      "name": "93971055efd308e4a74f.hot-update.json",
+      "size": 82,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "css/1.css",
+      "size": 2265,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "css/2.css",
+      "size": 28,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "css/4.css",
+      "size": 28,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "css/6.css",
+      "size": 398,
+      "chunks": [
+        6
+      ],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "css/main.css",
+      "size": 201,
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/logo-25bf0.min.svg",
+      "size": 8205,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "images/zr-5ab53.min.png",
+      "size": 637153,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "index.html",
+      "size": 461,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "main.93971055efd308e4a74f.hot-update.js",
+      "size": 5048,
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "main.bundle.0d76e2fd.js",
+      "size": 3466731,
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        "css/main.css",
+        "main.bundle.0d76e2fd.js",
+        "main.93971055efd308e4a74f.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        "css/main.css",
+        "main.bundle.0d76e2fd.js",
+        "main.93971055efd308e4a74f.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": [
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/",
+      "outputPath": "/Users/baiyuejiao/repos/ssr-note/dist",
+      "assetsByChunkName": {},
+      "assets": [
+        {
+          "name": "index.html",
+          "size": 1427813,
+          "chunks": [
+            1
+          ],
+          "chunkNames": [],
+          "info": {},
+          "emitted": false
+        }
+      ],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "undefined": {
+          "chunks": [
+            1
+          ],
+          "assets": [
+            "index.html"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "undefined": {
+          "chunks": [
+            1
+          ],
+          "assets": [
+            "index.html"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "html-webpack-plugin for \"index.html\""
+    }
+  ]
+}
