@@ -1,54 +1,75 @@
 import React from 'react';
-import Counter from '../Counter'
-import './index.less';
-import zr from '../../images/zr.png'
-import edit from '../../svg/edit.svg'
+import { TabBar } from 'antd-mobile';
+import NoteList from '../NoteList'
+import NoteWrite from '../NoteWrite'
+import Self from '../Self'
 import CustomIcon from '../../component/CustomIcon'
-import { Button } from 'antd'
+import './index.less'
 
-export class App extends React.Component {
-  constructor(props) {
-      super(props);
-      console.log('-------------------------super---------------------')
-      this.state = {
-          change: true
-      }
-  }
-  static getDerivedStateFromProps() {
-      console.log('getDerivedStateFromProps')
-      return null
-  }
-  componentDidMount() {
-      console.log('app didmount')
-  }
+export default class TabBarExample extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            selectedTab: 'blueTab',
+            hidden: false,
+            fullScreen: false,
+        };
+    }
 
-  render() {
-    console.log('render-----------------')
-    return (
-        <div className="App">
-            <div onClick={() => this.setState({
-                change: !this.state.change,
-            })}>change</div>
-            <Counter/>
-            <CustomIcon type={edit} size="md" />
-            <p className="test"/>
-            <Button type="primary" shape="circle" icon="download" />
-            <img src={zr}/>
-            <header className="App-header">
-            <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </header>
-        </div>)
-  }
+    render() {
+        return (
+            <div className="app-wrapper">
+                <TabBar unselectedTintColor="#919199"
+                        tintColor="#4184F4"
+                        barTintColor="white"
+                        hidden={this.state.hidden}
+                        tabBarPosition="bottom">
+                    <TabBar.Item
+                        title="笔记"
+                        key="笔记"
+                        icon={<CustomIcon className="homepage-tab-bar-icon" type={require('../../svg/tab_message_default.svg')} size="md" />}
+                        selectedIcon={<CustomIcon className="homepage-tab-bar-icon" type={require('../../svg/message_active.svg')} size="md" />}
+                        selected={this.state.selectedTab === 'blueTab'}
+                        onPress={() => {
+                            this.setState({
+                                selectedTab: 'blueTab',
+                            });
+                        }}
+                    >
+                        <NoteList {...this.props} />
+                    </TabBar.Item>
 
+                    <TabBar.Item
+                        title="写作"
+                        key="写作"
+                        icon={<CustomIcon className="homepage-tab-bar-icon" type={require('../../svg/workDesk.svg')} size="md" />}
+                        selectedIcon={<CustomIcon className="homepage-tab-bar-icon" type={require('../../svg/workDesk_active.svg')} size="md" />}
+                        selected={this.state.selectedTab === 'redTab'}
+                        onPress={() => {
+                            this.setState({
+                                selectedTab: 'redTab',
+                            });
+                        }}
+                    >
+                        <NoteWrite {...this.props}/>
+                    </TabBar.Item>
+
+                    <TabBar.Item
+                        icon={<CustomIcon className="homepage-tab-bar-icon" type={require('../../svg/profile.svg')} size="md" />}
+                        selectedIcon={<CustomIcon className="homepage-tab-bar-icon" type={require('../../svg/profile_active.svg')} size="md" />}
+                        title="我的"
+                        key="我的"
+                        selected={this.state.selectedTab === 'greenTab'}
+                        onPress={() => {
+                            this.setState({
+                                selectedTab: 'greenTab',
+                            });
+                        }}
+                       >
+                        <Self/>
+                    </TabBar.Item>
+                </TabBar>
+            </div>
+        );
+    }
 }
-
-
-export default App
-

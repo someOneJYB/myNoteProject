@@ -3,13 +3,18 @@ import loadable from '@loadable/component';
 const Loading = () => <h3>加载中</h3>
 export default [
     {
-        path: '/all',
+        path: '/',
         component: loadable(() => import('../page/All'), {fallback: Loading,}),
         exact: true,
     },
     {
         path: '/home',
         component: loadable(() => import('../page/Home'), {fallback: Loading,}),
+        exact: true,
+    },
+    {
+        path: '/blogDetail/:count',
+        component: loadable(() => import('../page/NoteDetail'), {fallback: Loading,}),
         exact: true,
     },
     {

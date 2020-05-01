@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>我的icon/选中态@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.3220967,25.7374392 C19.1757675,27.1566537 21.4941712,28 24.0096679,28 C26.5190494,28 28.8322949,27.1607491 30.6837119,25.7477796 C32.3674324,26.7495331 35.7345615,28.3282863 40.7850993,30.4840392 L40.7851067,30.4840219 C41.5219232,30.798522 41.9999767,31.5223531 41.9999767,32.3234829 L41.9999767,40.000155 C41.9999767,41.1047245 41.1045462,42.000155 39.9999767,42.000155 L7.99997674,42.000155 C6.89540724,42.000155 5.99997674,41.1047245 5.99997674,40.000155 L5.99995376,32.3229489 C5.99995378,31.5221047 6.47766986,30.7984735 7.21409939,30.4837944 C12.2762118,28.3207348 15.6455443,26.7386164 17.3220967,25.7374392 Z M24,6 C28.418278,6 32,9.581722 32,14 L32,17 C32,21.418278 28.418278,25 24,25 C19.581722,25 16,21.418278 16,17 L16,14 C16,9.581722 19.581722,6 24,6 Z" id="path-1"></path>
+        <filter x="-23.6%" y="-18.1%" width="147.2%" height="147.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.517647059   0 0 0 0 0.956862745  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="我的icon/选中态" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Combined-Shape">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#4184F4" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

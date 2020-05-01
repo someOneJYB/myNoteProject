@@ -4,7 +4,8 @@ import routes from './routes';
 
 const Root = () => (
             <Switch>
-            {routes.map(i => ( <Route exact={i.exact} key={i.path} path={i.path} component={i.component} />))}
+                    {routes.map(i => (
+                        <Route exact={i.exact} key={i.path} path={i.path} component={i.component} />))}
             </Switch>
 )
 

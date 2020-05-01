@@ -71,14 +71,14 @@ module.exports = function getConfig(state){
                 {
                     test: /\.css/,
                     use: [{ loader: MiniCssExtractPlugin.loader}, 'css-loader', 'postcss-loader'],
-                    exclude: /node_modules/,
-                    include: path.resolve(dirname, 'src')
+                    // exclude: /node_modules/,
+                    // include: path.resolve(dirname, 'src')
                 },
                 {
                     test: /\.less/,
                     use: [{ loader: MiniCssExtractPlugin.loader }, 'css-loader', 'postcss-loader', 'less-loader'],
-                    exclude: /node_modules/,
-                    include: path.resolve(dirname, 'src')
+                    // exclude: /node_modules/,
+                    // include: path.resolve(dirname, 'src')
                 },
                 {
                     test: /\.svg$/,//(png|jpg|gif|svg)
@@ -131,6 +131,9 @@ module.exports = function getConfig(state){
                     let res = compilation.assets[data].source().replace('<body>', `<body><script>window._INIT_STATE_ = ${JSON.stringify(that.state)}</script>`)
                     compilation.assets[data] = new RawSource(res)
                 }
+                // if(data.indexOf('hot-update')  > -1) {
+                //     console.log(compilation.assets[data].source())
+                // }
             });
             cb()
         });

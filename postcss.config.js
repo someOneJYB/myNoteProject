@@ -20,5 +20,11 @@ module.exports = {
     require('postcss-preset-env')({ stage: 1 }),
     isProd ? cssnano({ preset: 'default' }) : null,
     ...(isProd ? [purgecss] : []),
+    require('postcss-pxtorem')({
+      rootValue: 100,
+      propWhiteList: [],
+      unitPrecision: 100,
+      // propList: ['*'], // 加这个属性之后 px-->rem会不生效
+    }),
   ],
 };

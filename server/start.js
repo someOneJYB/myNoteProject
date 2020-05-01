@@ -1,7 +1,9 @@
 const Router = require('koa-router');
 const path = require('path')
+const koaBody = require('koa-body');
 const staticServer = require('koa-static')
 const Koa = require('koa')
+const api = require('./api.js')
 const render = require('./render.js').default
 const bodyParser = require('koa-bodyparser');
 const cors = require('koa2-cors');
@@ -16,12 +18,15 @@ function initStore() {
     return { num: 2 }
 }
 
+
 function initAppMiddleware(app) {
     const router = new Router();
     app.use(bodyParser());//解析Json或者form
     app.use(cors({credentials: true}));//跨域
+    //接口
+    app.use(api.routes()).use(api.allowedMethods());
     app.use(router.routes()).use(router.allowedMethods());
-    app.use(staticServer(path.resolve(__dirname, '../dist')));
+    app.use(staticServer(path.resolve(__dirname, '../noteStaticAssets')));
     router.get('/', render);
     app.use(render);
 }

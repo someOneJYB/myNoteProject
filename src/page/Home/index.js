@@ -5,7 +5,7 @@ import './index.less'
 export default function Home() {
     // Declare a new state variable, which we'll call "count"
     const [count, setCount] = useState({a: 0});
-    console.log('点击', count)
+    console.log('点击a', count)
     function handleClick() {
         console.log('btn')
         setTimeout(()=> {
@@ -22,7 +22,7 @@ export default function Home() {
         <div>
             <p className="text">You clicked {count.a} times</p>
             <button onClick={() => setCount({a: count.a + 1})}>
-                Click me
+                Click me ！！！
             </button>
             <Btn text={count.a}/>
             <div onClick={handleClick}>count 值的变化</div>

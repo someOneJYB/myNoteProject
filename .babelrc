@@ -9,7 +9,8 @@
           "edge": 13,
           "firefox": 50,
           "safari": 8
-        }
+        },
+        "useBuiltIns": "usage"
       }
     ]
   ],
@@ -17,6 +18,15 @@
     "recharts",
     "@babel/proposal-object-rest-spread",
     "@babel/plugin-proposal-class-properties",
-    "@babel/plugin-proposal-export-default-from"
+    "@babel/plugin-proposal-export-default-from",
+    [
+      "@babel/plugin-transform-runtime",
+    {
+      "corejs": false,
+      "helpers": true,
+      "regenerator": true,
+      "useESModules": false
+    }],
+    ["import", { "libraryName": "antd-mobile", "style": "css" }]
   ]
 }

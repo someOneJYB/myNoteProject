@@ -13,12 +13,14 @@ module.exports = {
             maxAsyncRequests: 5,   // 按需加载时候最大的并行请求数
             maxInitialRequests: 3,   // 最大初始化请求数
             automaticNameDelimiter: '~',   // 打包分割符
-            name: true,
+            name: 'common',
             cacheGroups: {
                 vendors: { // 项目基本框架等
                     chunks: 'all',
-                    test: /antd/,
+                    test:/[\\/]node_modules[\\/]/,
+                    //在node_modules范围内进行匹配
                     priority: 100,
+                    //  //优先级，先抽离公共的第三方库，再抽离业务代码，值越大优先级越高
                     name: 'vendors',
                 }
             }

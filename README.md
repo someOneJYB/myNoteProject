@@ -3,4 +3,9 @@
 ### store 使用单例模式保证同一个 store。
 ### 新版本服务端渲染不执行 getDerivedStateFromProps 旧版本执行到 willmount。
 ### 使用 nodemon 监听 server 文件夹下的变化
+### 存储在本地的markdown，支持编辑文档和浏览
 
+
+![5d44c464663b4a4b2b8b78e4bc2522fc](https://github.com/someOneJYB/myNoteProject/raw/master/noteStaticAssets/list.png)
+
+![5d44c464663b4a4b2b8b78e4bc2522fc](https://github.com/someOneJYB/myNoteProject/raw/master/noteStaticAssets/detail.png)

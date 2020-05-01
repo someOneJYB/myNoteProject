@@ -19,6 +19,11 @@ const commonConfig = {
         filename: '[name].bundle.[hash:8].js',
         publicPath: '/'
     },
+    resolve: {
+        alias: {
+            '@ant-design/icons/lib/dist$': path.resolve(__dirname, '../alias/antd/icon/lib/dist.js'),
+        },
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(dirname, 'public/index.html')
@@ -68,14 +73,14 @@ const commonConfig = {
             {
                 test: /\.css/,
                 use: [{ loader: MiniCssExtractPlugin.loader}, 'css-loader', 'postcss-loader'],
-                exclude: /node_modules/,
-                include: path.resolve(dirname, 'src')
+                // exclude: /node_modules/,
+                // include: path.resolve(dirname, 'src')
             },
             {
                 test: /\.less/,
                 use: [{ loader: MiniCssExtractPlugin.loader }, 'css-loader', 'postcss-loader', 'less-loader'],
-                exclude: /node_modules/,
-                include: path.resolve(dirname, 'src')
+                // exclude: /node_modules/,
+                // include: path.resolve(dirname, 'src')
             },
             {
                 test: /\.svg$/,//(png|jpg|gif|svg)
